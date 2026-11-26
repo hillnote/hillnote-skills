@@ -1,0 +1,16 @@
+{
+  "name": "hillnote-skills",
+  "owner": {
+    "name": "Hillnote"
+  },
+  "metadata": {
+    "description": "Agent skill and Cloud MCP connector for Hillnote, the markdown workspace app: documents, slide decks, databases, sheets, moodboards, libraries and HTML tools."
+  },
+  "plugins": [
+    {
+      "name": "hillnote",
+      "source": "./plugins/hillnote",
+      "description": "Work in your Hillnote workspaces: documents, slide decks, databases, sheets, moodboards, libraries and HTML tools, through Hillnote's Cloud MCP or the hillnote command."
+    }
+  ]
+}

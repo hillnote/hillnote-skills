@@ -1,0 +1,20 @@
+{
+  "name": "hillnote-skills",
+  "interface": {
+    "displayName": "Hillnote Skills"
+  },
+  "plugins": [
+    {
+      "name": "hillnote",
+      "source": {
+        "source": "local",
+        "path": "./plugins/hillnote"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

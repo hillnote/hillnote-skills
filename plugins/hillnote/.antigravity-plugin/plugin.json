@@ -1,0 +1,29 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "hillnote",
+  "displayName": "Hillnote",
+  "version": "1.0.0",
+  "description": "Work in your Hillnote workspaces: documents, slide decks, databases, sheets, moodboards, libraries and HTML tools, through Hillnote's Cloud MCP or the hillnote command.",
+  "author": {
+    "name": "Hillnote",
+    "url": "https://hillnote.com/"
+  },
+  "homepage": "https://hillnote.com/docs/mcp/claude-skill",
+  "repository": "https://github.com/hillnote/hillnote-skills",
+  "license": "MIT",
+  "keywords": [
+    "hillnote",
+    "markdown",
+    "notes",
+    "slides",
+    "databases",
+    "kanban",
+    "knowledge-base"
+  ],
+  "logo": "assets/icon.png",
+  "suggestedPrompts": [
+    "Find my notes about the current project and summarise the open decisions.",
+    "Turn this outline into a slide deck in my Hillnote workspace.",
+    "Save a summary of this conversation as a new note in Hillnote."
+  ]
+}

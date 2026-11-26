@@ -1,0 +1,64 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "hillnote",
+  "version": "1.0.0",
+  "description": "Work in your Hillnote workspaces: documents, slide decks, databases, sheets, moodboards, libraries and HTML tools, through Hillnote's Cloud MCP or the hillnote command.",
+  "author": {
+    "name": "Hillnote",
+    "url": "https://hillnote.com/"
+  },
+  "homepage": "https://hillnote.com/",
+  "repository": "https://github.com/hillnote/hillnote-skills",
+  "license": "MIT",
+  "keywords": [
+    "hillnote",
+    "markdown",
+    "notes",
+    "slides",
+    "databases",
+    "kanban",
+    "knowledge-base"
+  ],
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": false,
+      "interface": {
+        "displayName": "Hillnote",
+        "shortDescription": "Work in your Hillnote workspaces",
+        "longDescription": "Search, read and write the documents in your Hillnote workspaces, and build slide decks, databases and kanban boards, sheets, moodboards and HTML tools. Ask about your own projects and plans, and the answer comes from your notes, with the source named.\n\nWorkspaces synced to Hillnote's cloud connect through Hillnote's Cloud MCP: you sign in once in the browser and choose read-only or read & write. On the computer that holds your workspaces, agents that can run commands use the hillnote command in the Hillnote desktop app instead, and can open what they made in the app for you.",
+        "category": "Productivity",
+        "developerName": "Hillnote",
+        "defaultPrompt": [
+          "Find my notes about the current project and summarise the open decisions.",
+          "Turn this outline into a slide deck in my Hillnote workspace.",
+          "Save a summary of this conversation as a new note in Hillnote."
+        ],
+        "websiteURL": "https://hillnote.com/",
+        "supportURL": "https://hillnote.com/support",
+        "privacyPolicyURL": "https://hillnote.com/privacy",
+        "termsOfServiceURL": "https://hillnote.com/terms",
+        "logo": "./assets/icon.png",
+        "composerIcon": "./assets/icon.png",
+        "logoDark": "./assets/icon.png",
+        "composerIconDark": "./assets/icon.png",
+        "brandColor": "#0E9660",
+        "brandColorDark": "#0E9660"
+      },
+      "review": {
+        "commerce": false,
+        "prompts": [
+          "Search my Hillnote workspace for notes about the launch plan and summarise the open decisions, naming the notes you used.",
+          "Create a document in my Hillnote workspace with a summary of this conversation, tagged #meeting.",
+          "Turn this outline into a six-slide deck in my Hillnote workspace.",
+          "Show the rows in my Tasks database whose status is In Progress.",
+          "Add three rows to my reading list sheet: title, author and status.",
+          "Make a moodboard in my Hillnote workspace with three titled frames for these ideas."
+        ]
+      },
+      "publication": {
+        "countries": [],
+        "release_notes": "First release: the Hillnote skill and the Hillnote Cloud MCP connector."
+      }
+    }
+  }
+}
