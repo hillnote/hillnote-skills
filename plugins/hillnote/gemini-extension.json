@@ -1,6 +1,6 @@
 {
   "name": "hillnote",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Work in your Hillnote workspaces: documents, slide decks, databases, sheets, moodboards, libraries and HTML tools, through Hillnote's Cloud MCP or the hillnote command.",
   "mcpServers": {
     "hillnote": {

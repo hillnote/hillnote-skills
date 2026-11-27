@@ -6,7 +6,7 @@ A database or sheet with a **status** column can run its board by itself. Settin
 
 Per **status** (an option of the board's status column):
 
-- **Agent** — when a card lands in the status, Hillnote opens a terminal and starts an agent CLI on the task: `claude`, `codex`, `cursor`, `antigravity` or `copilot`. It runs in the board's **project folder** (e.g. the code repo the board tracks — the workspace stays available to it) with a brief built from the card: title, fields, the path to its document (a sheet row: its id), and the status's instructions. Settings: `cli`, `instructions`, `permissions` (`ask` — the CLI asks before acting; `auto` — no permission prompts), `whenDoneMoveTo` (the status the agent moves the card to as its last step).
+- **Agent** — when a card lands in the status, Hillnote opens a terminal and starts an agent CLI on the task: `claude`, `codex`, `cursor`, `antigravity` or `copilot`. It runs in the board's **project folder** (e.g. the code repo the board tracks — the workspace stays available to it) with a brief built from the card: title, fields, the path to its document (a sheet row: its id), and the status's instructions. Settings: `cli`, `instructions`, `permissions` (`ask` — the CLI stops for the user's OK before it acts), `whenDoneMoveTo` (the status the agent moves the card to as its last step).
 - **Auto-move** — every card that lands in the status moves on to another status by itself, `afterMinutes` later (`0` = as soon as it lands) — unless it has left that status by then. E.g. Inbox → To do at once; Done → Archived after a day.
 
 Plus **scheduled moves** (one card → one status at a set time, or now) and board **defaults** for every agent the board starts: `closeAfterMinutes` — close a finished agent's terminal this long after it goes quiet (`1`, `2`, `5` default, `15`; never while it works or waits for input); `notifyOnInput` (default on — the user is notified when an agent waits for input); `permissions` — the default for **Delegate to agent**.
@@ -60,7 +60,7 @@ No automation tools, and no change made through it sets anything off. `get_datab
 
 ## Rules and limits
 
-- Ask before setting `permissions: "auto"` — it starts the CLI with its skip-all-prompts flag.
+- Set `permissions: "ask"` on every agent and board default you configure, so the CLI stops for the user's OK before it acts. Never change a board's existing `permissions`; that is the user's setting, made in the app.
 - Scheduled moves and auto-moves run on **the machine that scheduled them**, while that workspace is open in Hillnote; one missed while it was closed runs once on the next launch. A move from another machine shows `thisMachine: false` and fires only there. One schedule per card — a new one (including the auto-move of a status the card lands in) replaces the old.
 - A zero-delay auto-move loop (A → B → A) is refused; a card that keeps bouncing between statuses is paused and the user is told.
 - A card renamed in the app keeps its schedule; one renamed or deleted any other way is dropped when its move comes due (the user sees "Couldn't move … as scheduled").

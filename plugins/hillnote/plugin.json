@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "hillnote",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Work in your Hillnote workspaces: documents, slide decks, databases, sheets, moodboards, libraries and HTML tools, through Hillnote's Cloud MCP or the hillnote command.",
   "author": {
     "name": "Hillnote",
