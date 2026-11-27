@@ -17,7 +17,7 @@ For every other agent, see the [repository README](https://github.com/hillnote/h
 ## How it connects
 
 - **On the computer with your workspaces**, agents that can run commands use the `hillnote` command in the Hillnote desktop app. Their edits show in Hillnote at once, and they can open documents, slides and boards in the app for you. Set it up in Hillnote under **Settings → Connections**: press **Configure** next to your agent app in the **Local MCP** card.
-- **Anywhere else**, Cloud MCP (`https://hillnote.com/mcp`), which this plugin adds, reaches your synced workspaces, even from a phone. The first time your agent uses it, you sign in to Hillnote in your browser and choose read-only or read & write.
+- **Anywhere else**, Cloud MCP (`https://hillnote.com/mcp`), which this plugin adds, reaches your synced workspaces, even from a phone. The first time your agent uses it, you sign in to Hillnote in your browser and allow access (the page shows whether your agent asked for read-only or read & write).
 
 ## Links
 

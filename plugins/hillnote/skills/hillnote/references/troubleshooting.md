@@ -7,7 +7,7 @@ Symptom → likely cause → what to do. When an error names its own fix (many H
 | Symptom | Likely cause | Remedy |
 |---|---|---|
 | Remote: `list_workspaces` is empty or the workspace is missing | Workspace never synced to the cloud | Open the Hillnote app → sync that workspace once → retry |
-| Remote: writes fail with `Write access required. This token only has "read" scope.` | The OAuth token was granted read-only | Reconnect/re-authorize the Hillnote connector and choose read & write; retrying won't help |
+| Remote: writes fail with `Write access required. This token only has "read" scope.` | The OAuth token was granted read-only | Reconnect the Hillnote connector so it asks for read & write (the sign-in page shows which access was asked for); retrying won't help |
 | Remote: everything suddenly 401s / asks to re-auth | Access token expired or was revoked | Re-authorize; if the user manages connections, they can also revoke stale tokens from their Hillnote account |
 | OAuth window never completes | Popup blocked or user not signed in to hillnote.com | Allow the popup, sign in on the site, retry the connect flow |
 | No Hillnote tools at all | Nothing connected | Offer to set it up yourself, asking first (`references/modes.md` → Setting things up), or the user opens Hillnote → **Settings → Connections** → **Configure** next to their agent app: the **Local MCP** card for this computer, the **Cloud MCP** card for synced workspaces anywhere |

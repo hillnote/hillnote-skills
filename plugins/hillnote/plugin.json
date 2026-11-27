@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "hillnote",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Work in your Hillnote workspaces: documents, slide decks, databases, sheets, moodboards, libraries and HTML tools, through Hillnote's Cloud MCP or the hillnote command.",
   "author": {
     "name": "Hillnote",
@@ -25,7 +25,7 @@
       "interface": {
         "displayName": "Hillnote",
         "shortDescription": "Work in your Hillnote workspaces",
-        "longDescription": "Search, read and write the documents in your Hillnote workspaces, and build slide decks, databases and kanban boards, sheets, moodboards and HTML tools. Ask about your own projects and plans, and the answer comes from your notes, with the source named.\n\nWorkspaces synced to Hillnote's cloud connect through Hillnote's Cloud MCP: you sign in once in the browser and choose read-only or read & write. On the computer that holds your workspaces, agents that can run commands use the hillnote command in the Hillnote desktop app instead, and can open what they made in the app for you.",
+        "longDescription": "Search, read and write the documents in your Hillnote workspaces, and build slide decks, databases and kanban boards, sheets, moodboards and HTML tools. Ask about your own projects and plans, and the answer comes from your notes, with the source named.\n\nWorkspaces synced to Hillnote's cloud connect through Hillnote's Cloud MCP: you sign in once in the browser and allow access. On the computer that holds your workspaces, agents that can run commands use the hillnote command in the Hillnote desktop app instead, and can open what they made in the app for you.",
         "category": "Productivity",
         "developerName": "Hillnote",
         "defaultPrompt": [

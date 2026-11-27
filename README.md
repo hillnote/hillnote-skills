@@ -17,7 +17,7 @@ Choose by where your agent runs:
 
 **The `hillnote` command** works on the workspaces on your computer with nothing to configure. Your agent's edits show in Hillnote at once, and Hillnote syncs them as usual. It can also work the app for you: open a document at a section, jump to a slide, show a kanban view, or jot something in your Notepad. It is already available in the terminals Hillnote opens.
 
-**Cloud MCP** reaches every workspace you have synced, from anywhere, even a phone, without the Hillnote app. This plugin adds it for you in Claude, Codex, Cursor and Gemini CLI. The first time your agent uses it, you sign in to Hillnote in your browser and choose read-only or read & write. See the [Cloud MCP docs](https://hillnote.com/docs/mcp/cloud-mcp).
+**Cloud MCP** reaches every workspace you have synced, from anywhere, even a phone, without the Hillnote app. This plugin adds it for you in Claude, Codex, Cursor and Gemini CLI. The first time your agent uses it, you sign in to Hillnote in your browser and allow access (the page shows whether your agent asked for read-only or read & write). See the [Cloud MCP docs](https://hillnote.com/docs/mcp/cloud-mcp).
 
 Both can be on at once: the skill uses the command for workspaces on your computer and Cloud MCP for the rest.
 
